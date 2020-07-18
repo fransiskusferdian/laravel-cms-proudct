@@ -1,0 +1,42 @@
+/*---------------------
+   Header section
+ -----------------------*/
+.header-section {
+    padding: 20px 35px 20px 20px;
+    overflow: hidden;
+}
+
+.site-logo {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0em;
+}
+
+.menu-switch {
+    float: right;
+    cursor: pointer;
+
+    i {
+        color: $white_color;
+        font-size: 37px;
+        line-height: 37px;
+    }
+}
+
+.headroom--pinned {
+    transform: translateY(0);
+}
+
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+.header--fixed {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    top: 0;
+    transition: all .3s ease 0s;
+}
